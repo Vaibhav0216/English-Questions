@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,34 +12,40 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 700px;
             margin: 40px auto;
             padding: 20px;
         }
+
         .question-card {
             background: #fff;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
             margin-bottom: 32px;
             padding: 28px 24px 20px 24px;
             position: relative;
             transition: box-shadow 0.2s;
         }
+
         .question-card:hover {
-            box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
         }
+
         .question-header {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
         }
+
         .question-number {
             font-weight: 600;
             color: #2d6cdf;
             font-size: 1.1em;
             margin-right: 10px;
         }
+
         .copy-btn {
             background: #2d6cdf;
             color: #fff;
@@ -49,42 +56,52 @@
             cursor: pointer;
             transition: background 0.2s;
         }
-        .copy-btn:active, .copy-btn:focus {
+
+        .copy-btn:active,
+        .copy-btn:focus {
             background: #1b4e9b;
             outline: none;
         }
+
         .question-text {
             font-size: 1.08em;
             margin: 10px 0 16px 0;
-            color: #222;
+            color: #000000;
         }
+
         .options {
             margin-bottom: 10px;
         }
+
         .option {
             margin: 6px 0;
             padding-left: 8px;
             font-size: 1em;
-            color: #444;
+            color: #000000;
         }
+
         @media (max-width: 600px) {
             .container {
                 padding: 6px;
             }
+
             .question-card {
                 padding: 16px 8px 14px 8px;
             }
         }
     </style>
 </head>
+
 <body>
-    <h1 style="text-align:center; color:#1b4e9b; font-family:'Segoe UI', Arial, sans-serif; font-size:2.1em; margin-top:32px; margin-bottom:10px; letter-spacing:1px;">Question Paper 2021</h1>
+    <h1
+        style="text-align:center; color:#1b4e9b; font-family:'Segoe UI', Arial, sans-serif; font-size:2.1em; margin-top:32px; margin-bottom:10px; letter-spacing:1px;">
+        Question Paper 2021</h1>
     <div class="container">
         <!-- Question 51 -->
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">51.</span>
-                <button class="copy-btn" onclick="copyQuestion('q51')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q51')">Copy</button>
             </div>
             <div class="question-text" id="q51-text">
                 ‘You <u>ought to</u> be considerate towards your patients’.<br>
@@ -100,7 +117,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">52.</span>
-                <button class="copy-btn" onclick="copyQuestion('q52')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q52')">Copy</button>
             </div>
             <div class="question-text" id="q52-text">
                 Read the following sentence carefully and answer the given question:<br>
@@ -118,7 +135,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">53.</span>
-                <button class="copy-btn" onclick="copyQuestion('q53')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q53')">Copy</button>
             </div>
             <div class="question-text" id="q53-text">
                 He said to me, “<i>Help him in settling the accounts</i>”.<br>
@@ -137,7 +154,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">54.</span>
-                <button class="copy-btn" onclick="copyQuestion('q54')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q54')">Copy</button>
             </div>
             <div class="question-text" id="q54-text">
                 Grishma spoke with <i>'white heat'</i>.<br>
@@ -154,7 +171,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">55.</span>
-                <button class="copy-btn" onclick="copyQuestion('q55')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q55')">Copy</button>
             </div>
             <div class="question-text" id="q55-text">
                 The word <i>‘avaricious’</i> is synonymous with _________.
@@ -169,7 +186,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">56.</span>
-                <button class="copy-btn" onclick="copyQuestion('q56')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q56')">Copy</button>
             </div>
             <div class="question-text" id="q56-text">
                 <i>‘One who lives for pleasure’.</i><br>
@@ -185,7 +202,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">57.</span>
-                <button class="copy-btn" onclick="copyQuestion('q57')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q57')">Copy</button>
             </div>
             <div class="question-text" id="q57-text">
                 <i>‘Stop talking’.</i><br>
@@ -204,7 +221,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">58.</span>
-                <button class="copy-btn" onclick="copyQuestion('q58')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q58')">Copy</button>
             </div>
             <div class="question-text" id="q58-text">
                 Use proper punctuation in the blank space of the following sentence:<br>
@@ -221,7 +238,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">59.</span>
-                <button class="copy-btn" onclick="copyQuestion('q59')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q59')">Copy</button>
             </div>
             <div class="question-text" id="q59-text">
                 The underlined word in the given sentence is:<br>
@@ -238,7 +255,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">60.</span>
-                <button class="copy-btn" onclick="copyQuestion('q60')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q60')">Copy</button>
             </div>
             <div class="question-text" id="q60-text">
                 Read the sentence carefully and identify what kind of conjunction the underlined word is:<br>
@@ -255,7 +272,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">61.</span>
-                <button class="copy-btn" onclick="copyQuestion('q61')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q61')">Copy</button>
             </div>
             <div class="question-text" id="q61-text">
                 <i>‘The military <b>is going to</b> lay a trap to arrest the terrorists’.</i><br>
@@ -274,7 +291,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">62.</span>
-                <button class="copy-btn" onclick="copyQuestion('q62')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q62')">Copy</button>
             </div>
             <div class="question-text" id="q62-text">
                 Choose the best meaning of the underlined word.<br>
@@ -291,7 +308,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">63.</span>
-                <button class="copy-btn" onclick="copyQuestion('q63')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q63')">Copy</button>
             </div>
             <div class="question-text" id="q63-text">
                 _______ what you can afford.<br>
@@ -308,7 +325,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">64.</span>
-                <button class="copy-btn" onclick="copyQuestion('q64')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q64')">Copy</button>
             </div>
             <div class="question-text" id="q64-text">
                 Match the following homophones – <i>‘Vein’, ‘Vain’ and ‘Vane’</i> with their correct meaning:
@@ -328,7 +345,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">65.</span>
-                <button class="copy-btn" onclick="copyQuestion('q65')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q65')">Copy</button>
             </div>
             <div class="question-text" id="q65-text">
                 Find out the exact meaning of the underlined idiom in the given sentence:<br>
@@ -345,7 +362,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">66.</span>
-                <button class="copy-btn" onclick="copyQuestion('q66')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q66')">Copy</button>
             </div>
             <div class="question-text" id="q66-text">
                 Read the following sentence.<br>
@@ -363,7 +380,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">67.</span>
-                <button class="copy-btn" onclick="copyQuestion('q67')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q67')">Copy</button>
             </div>
             <div class="question-text" id="q67-text">
                 <i>Her bank</i> fell down from her purse.<br>
@@ -382,7 +399,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">68.</span>
-                <button class="copy-btn" onclick="copyQuestion('q68')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q68')">Copy</button>
             </div>
             <div class="question-text" id="q68-text">
                 <i>‘This is the place <b>where the murder was committed</b>’.</i><br>
@@ -401,7 +418,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">69.</span>
-                <button class="copy-btn" onclick="copyQuestion('q69')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q69')">Copy</button>
             </div>
             <div class="question-text" id="q69-text">
                 Choose the word/s wrongly spelt.
@@ -418,7 +435,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">70.</span>
-                <button class="copy-btn" onclick="copyQuestion('q70')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q70')">Copy</button>
             </div>
             <div class="question-text" id="q70-text">
                 Choose the incorrect sentence:
@@ -436,7 +453,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">71.</span>
-                <button class="copy-btn" onclick="copyQuestion('q71')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q71')">Copy</button>
             </div>
             <div class="question-text" id="q71-text">
                 Choose the correct sentence:
@@ -454,7 +471,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">72.</span>
-                <button class="copy-btn" onclick="copyQuestion('q72')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q72')">Copy</button>
             </div>
             <div class="question-text" id="q72-text">
                 ________ is the correct compound noun in the plural form.
@@ -472,7 +489,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">73.</span>
-                <button class="copy-btn" onclick="copyQuestion('q73')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q73')">Copy</button>
             </div>
             <div class="question-text" id="q73-text">
                 Read the following sentence:<br>
@@ -490,7 +507,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">74.</span>
-                <button class="copy-btn" onclick="copyQuestion('q74')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q74')">Copy</button>
             </div>
             <div class="question-text" id="q74-text">
                 Read the sentences carefully and choose a correct answer from the options given below:
@@ -507,7 +524,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">75.</span>
-                <button class="copy-btn" onclick="copyQuestion('q75')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q75')">Copy</button>
             </div>
             <div class="question-text" id="q75-text">
                 ‘The judge ordered that the accused be set free’.<br>
@@ -526,14 +543,23 @@
             </div>
             <div class="question-text" id="passage-text" style="font-size:1em; color:#222;">
                 <b>Read the passage given below carefully and answer questions numbers 76 to 80 based on it.</b><br><br>
-                Until he was ten, young Alexander Fleming attended the nearby London Moor school. He was then transferred to Darvel school which he attended with his brothers. Alexander learned a good deal about nature during that four-mile downhill hike to school and the four-mile uphill return trip. He was a quick student and at twelve, the age limit prescribed for Darvel school, he was sent to Kilmarnock Academy. Two years later he joined his brothers John and Robert at the home of his elder brother Thomas, who was to become a successful occultist in London. However, the economic success of the family was yet to be and Alexander was forced to leave school for economic reasons. When he was sixteen he obtained a job in a shipping company. Good fortune, however, was on his side and on the side of humanity. In 1901, he received a share in a legacy which made it possible for him to return to school. He decided to study medicine.
+                Until he was ten, young Alexander Fleming attended the nearby London Moor school. He was then
+                transferred to Darvel school which he attended with his brothers. Alexander learned a good deal about
+                nature during that four-mile downhill hike to school and the four-mile uphill return trip. He was a
+                quick student and at twelve, the age limit prescribed for Darvel school, he was sent to Kilmarnock
+                Academy. Two years later he joined his brothers John and Robert at the home of his elder brother Thomas,
+                who was to become a successful occultist in London. However, the economic success of the family was yet
+                to be and Alexander was forced to leave school for economic reasons. When he was sixteen he obtained a
+                job in a shipping company. Good fortune, however, was on his side and on the side of humanity. In 1901,
+                he received a share in a legacy which made it possible for him to return to school. He decided to study
+                medicine.
             </div>
         </div>
         <!-- Question 76 -->
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">76.</span>
-                <button class="copy-btn" onclick="copyQuestion('q76')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q76')">Copy</button>
             </div>
             <div class="question-text" id="q76-text">
                 The word 'legacy' in the context means _____.
@@ -549,7 +575,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">77.</span>
-                <button class="copy-btn" onclick="copyQuestion('q77')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q77')">Copy</button>
             </div>
             <div class="question-text" id="q77-text">
                 Alexander trekked _____ miles every day to attend Darvel school.
@@ -565,7 +591,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">78.</span>
-                <button class="copy-btn" onclick="copyQuestion('q78')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q78')">Copy</button>
             </div>
             <div class="question-text" id="q78-text">
                 He was a quick student - This means that Alexander _____.
@@ -581,7 +607,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">79.</span>
-                <button class="copy-btn" onclick="copyQuestion('q79')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q79')">Copy</button>
             </div>
             <div class="question-text" id="q79-text">
                 ...and at twelve, the age limit prescribed for Darvel school.<br>
@@ -598,7 +624,7 @@
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">80.</span>
-                <button class="copy-btn" onclick="copyQuestion('q80')">Copy</button>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q80')">Copy</button>
             </div>
             <div class="question-text" id="q80-text">
                 Alexander became rich _____.
@@ -611,17 +637,683 @@
             </div>
         </div>
     </div>
-    <script>
-        function copyQuestion(qid) {
-            const text = document.getElementById(qid + '-text').innerText.trim();
-            const options = document.getElementById(qid + '-options').innerText.trim();
-            const toCopy = text + '\n' + options;
-            navigator.clipboard.writeText(toCopy).then(() => {
-                alert('Copied to clipboard!');
-            }, () => {
-                alert('Failed to copy.');
-            });
-        }
-    </script>
+    <!-- ...existing code... -->
+    <h1
+        style="text-align:center; color:#1b4e9b; font-family:'Segoe UI', Arial, sans-serif; font-size:2.1em; margin-top:32px; margin-bottom:10px; letter-spacing:1px;">
+        Question Paper 2020</h1>
+    <div class="container">
+        <!-- Add new questions for 2020 below this line -->
+
+        <!-- Question 51 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">51.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-51')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-51-text">
+                Identify the sentence/s punctuated correctly.<br>
+                a. The moon was bright; the fish were biting right; and all together it was a glorious night.<br>
+                b. Dr. Harish is a well-mannered man.<br>
+                c. The Country Club is closed.
+            </div>
+            <div class="options" id="q2020-51-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only a and c</div>
+                <div class="option">(2) Only b and c</div>
+                <div class="option">(3) Only c</div>
+                <div class="option">(4) Only a</div>
+            </div>
+        </div>
+
+        <!-- Question 52 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">52.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-52')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-52-text">
+                The word 'taciturn' is antonymous with _____.<br>
+                a. clear<br>
+                b. talkative<br>
+                c. uncommunicative<br>
+                d. speechless
+            </div>
+            <div class="options" id="q2020-52-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only d</div>
+                <div class="option">(2) Only b</div>
+                <div class="option">(3) Only a and c</div>
+                <div class="option">(4) Only c</div>
+            </div>
+        </div>
+
+        <!-- Question 53 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">53.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-53')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-53-text">
+                Select the alternative in which the words are spelt correctly.
+            </div>
+            <div class="options" id="q2020-53-options">
+                <div class="option">(1) courageous, serviceable, perseverance, observatory</div>
+                <div class="option">(2) beneficent, epidemic, homogeneous, miscellaneous</div>
+                <div class="option">(3) pauper, planetorium, visionary, categorical</div>
+                <div class="option">(4) suggestable, administrative, beverage, hideous</div>
+            </div>
+        </div>
+
+        <!-- Question 54 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">54.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-54')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-54-text">
+                Choose the nearest meaning of the underlined words.<br>
+                The same contract, <u>mutatis mutandis</u>, will be given to each employee.
+            </div>
+            <div class="options" id="q2020-54-options">
+                <div class="option">(1) Printed on both sides of paper</div>
+                <div class="option">(2) Folded in the middle of paper</div>
+                <div class="option">(3) Making small changes that are necessary</div>
+                <div class="option">(4) On A-4 size paper</div>
+            </div>
+        </div>
+        <!-- ...existing code... -->
+        <!-- Question 55 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">55.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-55')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-55-text">
+                Point out the odd sentence.
+            </div>
+            <div class="options" id="q2020-55-options">
+                <div class="option">(1) Rainy season is mostly greeted by all the farmers in India.</div>
+                <div class="option">(2) Seasonal railway tickets are not available now.</div>
+                <div class="option">(3) One must eat the seasonal fruits to be healthy.</div>
+                <div class="option">(4) Mohammad Ali was a seasoned boxer.</div>
+            </div>
+        </div>
+
+        <!-- Question 56 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">56.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-56')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-56-text">
+                She is the dullest girl in the class.<br>
+                Select the correct positive degree of the above.
+            </div>
+            <div class="options" id="q2020-56-options">
+                <div class="option">(1) Very few girls in the class are as dull as she.</div>
+                <div class="option">(2) She is a duller girl in the whole class.</div>
+                <div class="option">(3) She is as dull as any other girl in the class.</div>
+                <div class="option">(4) No other girl in the class is as dull as she.</div>
+            </div>
+        </div>
+
+        <!-- Question 57 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">57.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-57')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-57-text">
+                In the following sentence, some parts are printed in bold italics type. There are four choices. Find out
+                which choice has the same meaning as the part in the sentence which is in bold italics type.<br>
+                "You can continue with the programme after I have left," said the guest.
+            </div>
+            <div class="options" id="q2020-57-options">
+                <div class="option">a. carry out</div>
+                <div class="option">b. carry off</div>
+                <div class="option">c. carry away</div>
+                <div class="option">d. carry on</div>
+                <div class="option"><b>Answer Options :</b></div>
+                <div class="option">(1) Only d</div>
+                <div class="option">(2) Only a</div>
+                <div class="option">(3) Only a and b</div>
+                <div class="option">(4) Only b and c</div>
+            </div>
+        </div>
+
+        <!-- Question 58 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">58.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-58')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-58-text">
+                She was _____ ported with pleasure.<br>
+                Select the correct prefix to make the sentence meaningful.
+            </div>
+            <div class="options" id="q2020-58-options">
+                <div class="option">(1) hy-</div>
+                <div class="option">(2) im-</div>
+                <div class="option">(3) counter-</div>
+                <div class="option">(4) trans-</div>
+            </div>
+        </div>
+
+        <!-- Question 59 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">59.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-59')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-59-text">
+                Which is/are near to the meaning of underlined word ?<br>
+                The track led them to a huddle of outbuildings.
+            </div>
+            <div class="options" id="q2020-59-options">
+                <div class="option">a. cluster</div>
+                <div class="option">b. crowd</div>
+                <div class="option">c. lament</div>
+                <div class="option"><b>Answer Options :</b></div>
+                <div class="option">(1) Only a</div>
+                <div class="option">(2) Only a and b</div>
+                <div class="option">(3) Only b and c</div>
+                <div class="option">(4) a, b and c</div>
+            </div>
+        </div>
+
+        <!-- Question 60 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">60.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-60')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-60-text">
+                Point out the incorrect conditional.
+            </div>
+            <div class="options" id="q2020-60-options">
+                <div class="option">(1) If you eat excessively, more fat will accumulate under your skin.</div>
+                <div class="option">(2) If you go to any picnic spot, you will only see the vacant hotels and deserted
+                    villages.</div>
+                <div class="option">(3) If she does regular exercise, she would not be in poor health.</div>
+                <div class="option">(4) If they had not mixed the industrial wastewater into the rivers, the water of
+                    rivers would have been rich in oxygen and crystal clear.</div>
+            </div>
+        </div>
+
+        <!-- Question 61 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">61.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-61')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-61-text">
+                We must go now, _____.<br>
+                Add a correct question tag.
+            </div>
+            <div class="options" id="q2020-61-options">
+                <div class="option">(1) are we ?</div>
+                <div class="option">(2) mustn't we ?</div>
+                <div class="option">(3) don't we ?</div>
+                <div class="option">(4) must we ?</div>
+            </div>
+        </div>
+
+        <!-- Question 62 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">62.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-62')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-62-text">
+                Select appropriate synonym for the bold italics word in the following sentence.<br>
+                I hate watching <i>frightening</i> movies.
+            </div>
+            <div class="options" id="q2020-62-options">
+                <div class="option">a. crying</div>
+                <div class="option">b. scary</div>
+                <div class="option">c. harsh</div>
+                <div class="option">d. stormy</div>
+                <div class="option"><b>Answer Options :</b></div>
+                <div class="option">(1) Only b and c</div>
+                <div class="option">(2) Only b</div>
+                <div class="option">(3) Only a</div>
+                <div class="option">(4) Only d</div>
+            </div>
+        </div>
+        <!-- ...existing code... -->
+        <!-- Question 63 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">63.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-63')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-63-text">
+                Identify the correct sentence/s.<br>
+                a. He cited his authorities.<br>
+                b. He chose this sight for his building.<br>
+                c. She hates the site of blood.
+            </div>
+            <div class="options" id="q2020-63-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only a</div>
+                <div class="option">(2) Only b</div>
+                <div class="option">(3) Only b and c</div>
+                <div class="option">(4) Only a and c</div>
+            </div>
+        </div>
+
+        <!-- Question 64 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">64.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-64')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-64-text">
+                Fill in the blank with the appropriate option.<br>
+                Police refused to _____ the identity of the suspect.
+            </div>
+            <div class="options" id="q2020-64-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) convulge</div>
+                <div class="option">(2) divulge</div>
+                <div class="option">(3) convulse</div>
+                <div class="option">(4) divert</div>
+            </div>
+        </div>
+
+        <!-- Question 65 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">65.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-65')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-65-text">
+                Point out the sentences which have antonyms in them.<br>
+                a. Many freedom fighters were condemned to live in the prison cells and die there only.<br>
+                b. We always praise her because she is blessed with two brilliant and beautiful daughters.<br>
+                c. A large stork at last caught hold of a small frog and hastily gobbled it.<br>
+                d. Many unpleasant dreams haunted him till he became a lunatic.
+            </div>
+            <div class="options" id="q2020-65-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only a and b</div>
+                <div class="option">(2) Only a and d</div>
+                <div class="option">(3) Only a and c</div>
+                <div class="option">(4) Only b and c</div>
+            </div>
+        </div>
+
+        <!-- Question 66 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">66.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-66')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-66-text">
+                Spot the error in the following sentence. If no error say so.<br>
+                For the last three days, I have been feeling out of sort. No error.<br>
+                a&nbsp;&nbsp;&nbsp;b&nbsp;&nbsp;&nbsp;c&nbsp;&nbsp;&nbsp;d
+            </div>
+            <div class="options" id="q2020-66-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) a</div>
+                <div class="option">(2) b</div>
+                <div class="option">(3) c</div>
+                <div class="option">(4) d</div>
+            </div>
+        </div>
+        <!-- ...existing code... -->
+        <!-- Question 67 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">67.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-67')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-67-text">
+                What type of sentence is the following ?<br>
+                When the old man was gone, God called Abraham and asked him where the stranger was.<br>
+                a. Complex sentence<br>
+                b. Compound sentence<br>
+                c. Compound complex sentence<br>
+                d. Simple sentence
+            </div>
+            <div class="options" id="q2020-67-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only a</div>
+                <div class="option">(2) Only d</div>
+                <div class="option">(3) Only c and d</div>
+                <div class="option">(4) Only c</div>
+            </div>
+        </div>
+
+        <!-- Question 68 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">68.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-68')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-68-text">
+                Which one of the following prefixes meaning 'all' best suits the word 'scient' ?<br>
+                a. supra-<br>
+                b. super-<br>
+                c. sur-<br>
+                d. omni-
+            </div>
+            <div class="options" id="q2020-68-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only d</div>
+                <div class="option">(2) Only b</div>
+                <div class="option">(3) Only c</div>
+                <div class="option">(4) Only a</div>
+            </div>
+        </div>
+
+        <!-- Question 69 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">69.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-69')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-69-text">
+                Choose the nearest meaning of the underlined item.<br>
+                His father is an oncologist.
+            </div>
+            <div class="options" id="q2020-69-options">
+                <div class="option">(1) One who studies pandemic.</div>
+                <div class="option">(2) One who studies tumours in the body.</div>
+                <div class="option">(3) One who is specialised in kidney diseases.</div>
+                <div class="option">(4) One who studies loss of hair.</div>
+            </div>
+        </div>
+
+        <!-- Question 70 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">70.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-70')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-70-text">
+                Point out the incorrect sentence.
+            </div>
+            <div class="options" id="q2020-70-options">
+                <div class="option">(1) Many old mills and their grinders are now obsolete.</div>
+                <div class="option">(2) A person who hates mankind is a misanthrope.</div>
+                <div class="option">(3) A thing or action that cannot be believed is incredible.</div>
+                <div class="option">(4) A person who believes in fate is a fatalist.</div>
+            </div>
+        </div>
+        <!-- Passage for Questions 71-75 -->
+        <div class="question-card" style="background: #f0f4fa; border-left: 5px solid #2d6cdf;">
+            <div class="question-header">
+                <span class="question-number" style="color:#1b4e9b;">Passage</span>
+            </div>
+            <div class="question-text" id="passage-text" style="font-size:1em; color:#222;">
+                <b>Read the following passage carefully and answer the questions from 71 to 75 : </b><br><br>
+
+                Science has obviously multiplied the power of the war-makers. The weapons of the moment can kill
+                more people more secretly and more unpleasantly than those of the past. This progress — as for want
+                of another word I must call it — this progress has been going on for some time. It has been said of
+                each new weapon that it is so destructive and horrible that it will frighten people into their wits
+                and force the nations to give up war for lack of cannon fodder. This hope has never been fulfilled,
+                and I know no one who takes refuge in it today. The acts of men and women are not dictated by such
+                simple compulsions and they themselves do not stand in any simple relation to the decision of the
+                nations which they compromise. Grapeshot, TNT and gas have not helped to outlaw war and I see no
+                sign that the hydrogen bomb or a whiff of bacteria will be more successful in making men wise by
+                compulsion.
+                Secondly, science at the same time has given the nations quite new occasions for falling out. I do
+                not mean such simple objectives as someone else's uranium mine or a Pacific Island which happens to
+                be knee-deep in organic fertilizer. I do not mean merely another nation's factories and her skilled
+                production. These are all parts of the surplus above our simple needs which gives our civilization
+                the character and war in our times battens on this surplus. This is the object of the greed of
+                nations and this also gives them the leisure to train and the means to arm for war. At bottom, we
+                have remained individually too greedy to distribute our surplus and collectively too stupid to pile
+                it up in any more useful form than the traditional mountains of arms. Science has created the
+                surplus. Now put this year's budget beside the budget of 1750, anywhere in the world, and you will
+                see what we are doing with it.
+            </div>
+        </div>
+        <!-- Question 71 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">71.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-71')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-71-text">
+                The object of the greed of nations is to _____.<br>
+                a. create the surplus by using science.<br>
+                b. multiply the power of the war-makers.<br>
+                c. compare the budget of 1750 and of this year.<br>
+                d. grab the surplus of other nations.
+            </div>
+            <div class="options" id="q2020-71-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only b</div>
+                <div class="option">(2) Only d</div>
+                <div class="option">(3) Only c</div>
+                <div class="option">(4) Only a</div>
+            </div>
+        </div>
+        <!-- Question 72 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">72.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-72')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-72-text">
+                Men will not be wise by _____.<br>
+                a. distributing the surplus in the world<br>
+                b. using the hydrogen bomb or a whiff of bacteria in war<br>
+                c. giving up war for lack of cannon fodder<br>
+                d. multiplying their war power
+            </div>
+            <div class="options" id="q2020-72-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only c</div>
+                <div class="option">(2) Only a</div>
+                <div class="option">(3) Only b</div>
+                <div class="option">(4) Only d</div>
+            </div>
+        </div>
+
+        <!-- Question 73 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">73.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-73')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-73-text">
+                A feature of each new weapon is that it _____.<br>
+                a. is created by science<br>
+                b. frightens people into their wits<br>
+                c. is dictated by men's compulsions<br>
+                d. can kill people more secretly and more unpleasantly
+            </div>
+            <div class="options" id="q2020-73-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only d</div>
+                <div class="option">(2) Only a</div>
+                <div class="option">(3) Only c</div>
+                <div class="option">(4) Only b</div>
+            </div>
+        </div>
+
+        <!-- Question 74 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">74.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-74')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-74-text">
+                The hope which has never been fulfilled is that _____.<br>
+                a. the progress in producing weapons will stop<br>
+                b. the new weapon will force the nations to give up war<br>
+                c. every nation will have the leisure to train and the means to arm for war<br>
+                d. science will stop creating the surplus in the world
+            </div>
+            <div class="options" id="q2020-74-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only d</div>
+                <div class="option">(2) Only b</div>
+                <div class="option">(3) Only c</div>
+                <div class="option">(4) Only a</div>
+            </div>
+        </div>
+
+        <!-- Question 75 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">75.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-75')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-75-text">
+                The most suitable title for this passage is _____.<br>
+                a. Men and Warfare<br>
+                b. Science and Progress<br>
+                c. Science and War Weapons<br>
+                d. The Greed of Nations and War Compulsions
+            </div>
+            <div class="options" id="q2020-75-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only d</div>
+                <div class="option">(2) Only c</div>
+                <div class="option">(3) Only b</div>
+                <div class="option">(4) Only a</div>
+            </div>
+        </div>
+        <!-- ...existing code... -->
+        <!-- Question 76 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">76.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-76')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-76-text">
+                Identify the correct sentence/s.<br>
+                a. The steak tastes badly.<br>
+                b. The team played well.<br>
+                c. Frank is happier than any man.
+            </div>
+            <div class="options" id="q2020-76-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only a</div>
+                <div class="option">(2) Only b</div>
+                <div class="option">(3) Only a and b</div>
+                <div class="option">(4) Only b and c</div>
+            </div>
+        </div>
+
+        <!-- Question 77 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">77.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-77')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-77-text">
+                Choose the correct synonym for 'Obstinate' from the following :<br>
+                a. Detest<br>
+                b. Indolent<br>
+                c. Obscure<br>
+                d. Stubborn
+            </div>
+            <div class="options" id="q2020-77-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only a and b</div>
+                <div class="option">(2) Only b and c</div>
+                <div class="option">(3) Only c</div>
+                <div class="option">(4) Only d</div>
+            </div>
+        </div>
+
+        <!-- Question 78 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">78.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-78')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-78-text">
+                Which of the following word(s) best explain(s) the phrase – "Medicine given to counteract poison or
+                disease"
+                ?<br>
+                a. Antibiotic<br>
+                b. Antiseptic<br>
+                c. Antidote<br>
+                d. Allopathy
+            </div>
+            <div class="options" id="q2020-78-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only c</div>
+                <div class="option">(2) Only a</div>
+                <div class="option">(3) Both a and b</div>
+                <div class="option">(4) Only d</div>
+            </div>
+        </div>
+
+        <!-- Question 79 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">79.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-79')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-79-text">
+                Which of the following word(s) mean(s) the same as Firmament ?<br>
+                a. Heavens<br>
+                b. Sky<br>
+                c. Dainty
+            </div>
+            <div class="options" id="q2020-79-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only a</div>
+                <div class="option">(2) Only a and b</div>
+                <div class="option">(3) Only b and c</div>
+                <div class="option">(4) a, b and c</div>
+            </div>
+        </div>
+
+        <!-- Question 80 (2020) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">80.</span>
+                <button class="copy-btn" onclick="copyQuestion(this, 'q2020-80')">Copy</button>
+            </div>
+            <div class="question-text" id="q2020-80-text">
+                Point out the sentences that are without any prefixes.<br>
+                a. They played a good game at Chennai.<br>
+                b. The child was fast asleep.<br>
+                c. The whole world knows Hitler's brutal actions.<br>
+                d. Shakespeare's dramas are famous all over the world.
+            </div>
+            <div class="options" id="q2020-80-options">
+                <div class="option">Answer Options :</div>
+                <div class="option">(1) Only a and c</div>
+                <div class="option">(2) Only a, c and d</div>
+                <div class="option">(3) Only b</div>
+                <div class="option">(4) None of the above</div>
+            </div>
+
+
+
+            <script>
+                function copyQuestion(btn, qid) {
+                    const text = document.getElementById(qid + '-text').innerText.trim();
+                    const options = document.getElementById(qid + '-options').innerText.trim();
+                    const toCopy = text + '\n' + options;
+                    navigator.clipboard.writeText(toCopy).then(() => {
+                        // Change button appearance
+                        const originalText = btn.innerText;
+                        btn.innerText = 'Copied!';
+                        btn.style.background = '#43b66e';
+                        btn.style.color = '#fff';
+                        btn.disabled = true;
+                        // Revert after 1.5 seconds
+                        setTimeout(() => {
+                            btn.innerText = originalText;
+                            btn.style.background = '';
+                            btn.style.color = '';
+                            btn.disabled = false;
+                        }, 1500);
+                    });
+                }
+            </script>
 </body>
+
 </html>
